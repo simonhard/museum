@@ -51,8 +51,8 @@
         <!-- Images 1 to 30 -->
         <!-- Replace the image src with the appropriate path -->
         <template x-for="i in 30" :key="i">
-            <a href="javascript:void(0)" @click="openLightbox = true; lightboxImage = `${i}.jpeg`">
-                <img :src="`${i}.jpeg`" :alt="`Image ${i}`" loading="lazy" class="w-full h-auto">
+            <a href="javascript:void(0)" @click="openLightbox = true; lightboxImage = `compressed_${i}.jpeg`">
+                <img :src="`compressed_${i}.jpeg`" :alt="`Image ${i}`" loading="lazy" class="w-full h-auto">
             </a>
         </template>
     </div>
